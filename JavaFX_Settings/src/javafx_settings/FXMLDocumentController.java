@@ -22,7 +22,7 @@ import javafx.scene.layout.AnchorPane;
 public class FXMLDocumentController implements Initializable {
     
     @FXML
-    private ImageView btn_settings, btn_user;
+    private ImageView btn_settings, btn_user, btn_resize;
     
     @FXML
     private AnchorPane h_settings, h_user;
@@ -36,6 +36,12 @@ public class FXMLDocumentController implements Initializable {
         
         if(event.getTarget() == btn_user){
             h_user.setVisible(true);
+            h_settings.setVisible(false);
+                
+        }
+        
+        if(event.getTarget() == btn_resize){
+            h_user.setVisible(false);
             h_settings.setVisible(false);
                 
         }

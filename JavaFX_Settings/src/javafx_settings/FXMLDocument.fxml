@@ -9,7 +9,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="470.0" prefWidth="405.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafx_settings.FXMLDocumentController">
+<AnchorPane id="AnchorPane" prefHeight="470.0" prefWidth="405.0" style="-fx-background-color: rgba(0,0,0,0);" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafx_settings.FXMLDocumentController">
    <children>
       <AnchorPane fx:id="a_topBar" prefHeight="67.0" prefWidth="405.0" style="-fx-background-color: #3D4956;">
          <children>
@@ -28,9 +28,9 @@
                   <Image url="@images/awards.png" />
                </image>
             </ImageView>
-            <ImageView fx:id="btn_stats" layoutX="316.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="btn_resize" fitHeight="32.0" fitWidth="32.0" layoutX="316.0" layoutY="18.0" onMousePressed="#handleButtonAction" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@images/stats.png" />
+                  <Image url="@images/resize.png" />
                </image>
             </ImageView>
          </children>
@@ -59,7 +59,7 @@
             </ImageView>
          </children>
       </AnchorPane>
-      <AnchorPane fx:id="h_settings" layoutY="77.0" prefHeight="393.0" prefWidth="405.0" style="-fx-background-color: #3D4956;" visible="false">
+      <AnchorPane fx:id="h_settings" layoutY="77.0" prefHeight="393.0" prefWidth="405.0" style="-fx-background-color: #3D4956;">
          <children>
             <Label layoutX="54.0" layoutY="40.0" text="TOUCH ENABLED" textFill="WHITE">
                <font>
@@ -84,12 +84,12 @@
                </font>
             </Label>
             <Separator layoutY="185.0" opacity="0.65" prefHeight="0.0" prefWidth="405.0" />
-            <JFXSlider layoutX="59.0" layoutY="258.0" prefHeight="14.0" prefWidth="284.0" />
             <Label layoutX="59.0" layoutY="224.0" text="SCREEN BRIGHTENESS" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font>
             </Label>
+            <JFXSlider layoutX="59.0" layoutY="258.0" prefHeight="14.0" prefWidth="284.0" />
             <JFXCheckBox checkedColor="#eda678" layoutX="50.0" layoutY="289.0" text="Auto Brighteness" textFill="#f2f2f2" />
             <JFXButton layoutX="215.0" layoutY="339.0" prefHeight="25.0" prefWidth="128.0" style="-fx-background-color: #eda678; -fx-border-radius: 5em; -fx-background-radius: 5em;" text="Save" />
             <JFXButton layoutX="57.0" layoutY="339.0" prefHeight="25.0" prefWidth="128.0" style="-fx-background-color: #a1a1a1; -fx-border-radius: 5em; -fx-background-radius: 5em;" text="Cancel" textFill="#3c3c3c" />
